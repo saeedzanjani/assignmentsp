@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+@import '../../styles/components';
+@import '../../styles/grid';
+
+.category{
+    width: 100%;
+    max-height: 100vh;
+    @include flexRow;
+    margin: 50px 0;
+    @include tablet {
+        flex-flow: column;
+    }
+    @include mobile {
+        flex-flow: column;
+    }
+
+    &_image{
+        width: 60%;
+        height: 600px;
+        object-fit: cover;
+        @include tablet {
+            width: 100%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &_body{
+        width: 40%;
+        margin: 40px;
+        @include tablet {
+            width: 100%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+
+        &_btn{
+           background-color: $primary;
+           color: $light;
+           padding: 10px 40px;
+           border-radius: 5px;
+           border: none;
+           cursor: pointer;
+        }
+    }
+}
+
+.wishlist{
+    width: 50%;
+    border: 1px solid $dark;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+    &_remove{
+        color: $danger;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}

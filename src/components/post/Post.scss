@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+@import '../../styles/components';
+
+.container{
+    @include flexRow;
+    border: 1px dashed $dark;
+    padding: 4vw;
+    margin: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: $dark;
+}
+
+.post{
+    font-size: 2vw;
+    font-weight: 600;
+}

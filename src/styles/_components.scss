@@ -1,0 +1,10 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-flow: row;
+}
